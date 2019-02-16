@@ -68,7 +68,7 @@ service = Google::Apis::DocsV1::DocsService.new
 service.client_options.application_name = APPLICATION_NAME
 service.authorization = authorize
 
-document_id = ARGV[0] #'1ZPoDBHw79CD0J9x-BAisF23SexvSXErkuACIGwXghsU'
+document_id = ARGV[0] 
 document = service.get_document(document_id)
 # puts "#{document.title}" #{document.body.inspect}."
 document.body.content.each do |structural_element|
